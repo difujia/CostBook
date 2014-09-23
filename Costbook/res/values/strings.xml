@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Translations_en -->
+
+    <string name="app_name">Costbook</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- main activity -->
+    <string name="alert_title_delete">Delete item?</string>
+    <string name="alert_title_yes">Yes</string>
+    <string name="alert_title_no">No</string>
+
+    <!-- settings fragment -->
+    <string name="title_activity_settings">Settings</string>
+    <string name="settings_currency">Currency</string>
+    <string name="settings_alarm">Notify me</string>
+    <string name="settings_alarm_switch">Alarm everyday</string>
+    <string name="settings_alarm_time">Alarm time</string>
+    <string name="settings_primary_currency">Primary currency</string>
+    <string name="settings_multi_currency">Currencies in use</string>
+    <string name="settings_error_empty_selection">Select at least one.</string>
+    <string name="settings_discard">Discard</string>
+    <string name="settings_set">Set</string>
+    <string name="settings_cancel">Cancel</string>
+    <string name="settings_update_info">Exchange Rate updated:</string>
+    <string name="settings_never">never</string>
+
+    <!-- recorder panel fragment -->
+    <string name="title_activity_recorder">Take down</string>
+    <string name="panel_remark_hint">add remark....</string>
+    <string name="ok">OK</string>
+
+    <!-- notification -->
+    <string name="notification_title">Take down today\'s costs.</string>
+
+    <!-- human-readable entries -->
+    <string-array name="category_entries">
+        <item>general</item>
+        <item>housing</item>
+        <item>shopping</item>
+        <item>food</item>
+        <item>transport</item>
+        <item>entertain</item>
+        <item>bill</item>
+        <item>bank</item>
+        <item>study</item>
+        <item>IT</item>
+    </string-array>
+
+</resources>

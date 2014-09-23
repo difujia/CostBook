@@ -1,0 +1,65 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="@android:style/Theme.Holo.Light">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="vpiTabPageIndicatorStyle">@style/customTabPageIndicator</item>
+    </style>
+
+    <style name="customTabPageIndicator">
+        <item name="android:background">@drawable/pager_indicator_state_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textAppearance">@style/weekdayTextAppearance</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="baseTextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="primaryTextAppearance" parent="baseTextAppearance">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="secondaryTextAppearance" parent="baseTextAppearance">
+        <item name="android:textColor">@color/tint_grey</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="weekdayTextAppearance" parent="secondaryTextAppearance">
+        <item name="android:textColor">@color/pager_indicator_text_state</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="tinyTextAppearance" parent="baseTextAppearance">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TransparentTheme" parent="@style/AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="noBackgroundButton">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textAppearance">@style/secondaryTextAppearance</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+</resources>

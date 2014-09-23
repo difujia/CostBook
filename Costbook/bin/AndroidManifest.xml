@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.costs"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="costbook.activity.main.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="costbook.activity.settings.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="costbook.activity.main.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="costbook.activity.main.MainActivity" />
+        </activity>
+        <activity
+            android:name="costbook.activity.recorder.RecorderActivity"
+            android:exported="false"
+            android:label="@string/title_activity_recorder"
+            android:parentActivityName="costbook.activity.main.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="costbook.activity.main.MainActivity" />
+        </activity>
+
+        <!-- asynchronous update currency -->
+        <service
+            android:name="costbook.data.currency.CurrencyUpdateService"
+            android:exported="false" >
+        </service>
+
+        <!-- schedule alarm to update currency -->
+        <receiver
+            android:name="costbook.data.currency.CurrencyUpdateScheduler"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.costs.main.ONE_TIME_FIRE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- send everyday notification -->
+        <receiver
+            android:name="costbook.activity.settings.EverydayAlarmReceiver"
+            android:exported="false" >
+        </receiver>
+    </application>
+
+</manifest>

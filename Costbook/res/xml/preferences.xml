@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/settings_currency" >
+        <ListPreference
+            android:defaultValue="@string/pref_default_primary_currency"
+            android:entries="@array/pref_default_currency_in_use"
+            android:entryValues="@array/pref_default_currency_in_use"
+            android:key="@string/pref_key_primary_currency"
+            android:order="1"
+            android:title="@string/settings_primary_currency" />
+
+        <MultiSelectListPreference
+            android:defaultValue="@array/pref_default_currency_in_use"
+            android:entries="@array/currency_codes"
+            android:entryValues="@array/currency_codes"
+            android:key="@string/pref_key_currencies_in_use"
+            android:order="2"
+            android:title="@string/settings_multi_currency" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/settings_alarm" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_key_alarm_switch"
+            android:order="1"
+            android:title="@string/settings_alarm_switch" />
+
+        <costbook.activity.settings.TimePreference
+            android:defaultValue="@string/pref_default_alarm_time"
+            android:dependency="@string/pref_key_alarm_switch"
+            android:key="@string/pref_key_alarm_time"
+            android:order="2"
+            android:title="@string/settings_alarm_time" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- these arrays are for preferences and displaying categories -->
+    
+    <string-array name="category_images">
+        <item>@drawable/category_general</item>
+        <item>@drawable/category_housing</item>
+        <item>@drawable/category_shopping</item>
+        <item>@drawable/category_food</item>
+        <item>@drawable/category_transport</item>
+        <item>@drawable/category_entertain</item>
+        <item>@drawable/category_bill</item>
+        <item>@drawable/category_bank</item>
+        <item>@drawable/category_study</item>
+        <item>@drawable/category_it</item>
+    </string-array>
+    <string-array name="category_values">
+        <item>general</item>
+        <item>housing</item>
+        <item>shopping</item>
+        <item>food</item>
+        <item>transport</item>
+        <item>entertain</item>
+        <item>bill</item>
+        <item>bank</item>
+        <item>study</item>
+        <item>IT</item>
+    </string-array>
+
+    <string name="category_default">general</string>
+</resources>

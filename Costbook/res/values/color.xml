@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="tint_blue">#ff33b5e5</color>
+    <color name="tint_grey">#FF808080</color>
+    <color name="grid_cell_select">#8833b5e5</color>
+    <color name="grid_cell_unselect">#00000000</color>
+
+</resources>

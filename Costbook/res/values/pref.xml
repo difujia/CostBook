@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <!-- keys -->
+    <string name="pref_key_primary_currency">primary_currency</string>
+    <string name="pref_key_currencies_in_use">currencies_in_use</string>
+    <string name="pref_key_alarm_time">alarm_time</string>
+    <string name="pref_key_alarm_switch">alarm_switch</string>
+    <string name="pref_key_currency_update_timestamp">currency_update_timestamp</string>
+    
+    <!-- default values -->
+    <string name="pref_default_primary_currency">GBP</string>
+    <string name="pref_default_alarm_time">0</string>
+    <string-array name="pref_default_currency_in_use">
+        <item>@string/pref_default_primary_currency</item>
+    </string-array>
+</resources>

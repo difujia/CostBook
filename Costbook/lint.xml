@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ContentDescription">
+        <ignore path="res/layout/grid_cell_category.xml" />
+        <ignore path="res/layout/list_cell_cost.xml" />
+        <ignore path="res/layout/list_header.xml" />
+    </issue>
+    <issue id="HardcodedText">
+        <ignore path="res/layout-land/fragment_land.xml" />
+        <ignore path="res/layout/fragment_keypad.xml" />
+    </issue>
+    <issue id="IconColors" severity="ignore" />
+    <issue id="IconDensities" severity="ignore" />
+    <issue id="IconDuplicatesConfig" severity="ignore" />
+    <issue id="MissingTranslation" severity="ignore">
+        <ignore path="res/values/pref.xml" />
+    </issue>
+    <issue id="Overdraw" severity="ignore" />
+    <issue id="UnusedResources">
+        <ignore path="res/values/dimens.xml" />
+    </issue>
+    <issue id="UseCompoundDrawables">
+        <ignore path="res/layout/grid_cell_category.xml" />
+    </issue>
+</lint>

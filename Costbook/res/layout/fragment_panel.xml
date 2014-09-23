@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/background_light" >
+
+    <TextView
+        android:id="@+id/panel_text_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textAppearance="@style/secondaryTextAppearance" />
+
+    <Spinner
+        android:id="@+id/panel_spinner_currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/panel_text_date"
+        android:layout_marginLeft="@dimen/default_gap"
+        android:textAppearance="@style/primaryTextAppearance" />
+
+    <TextView
+        android:id="@+id/panel_text_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/panel_spinner_currency"
+        android:layout_alignBottom="@+id/panel_spinner_currency"
+        android:layout_alignTop="@+id/panel_spinner_currency"
+        android:layout_below="@+id/panel_text_date"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/default_gap"
+        android:gravity="center_vertical"
+        android:textAppearance="@style/primaryTextAppearance" />
+
+    <GridView
+        android:id="@+id/panel_grid_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/panel_text_remark"
+        android:layout_below="@+id/panel_spinner_currency"
+        android:numColumns="5"
+        android:padding="@dimen/default_gap"
+        android:scrollingCache="true" />
+
+    <EditText
+        android:id="@+id/panel_text_remark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:hint="@string/panel_remark_hint"
+        android:imeOptions="actionDone"
+        android:inputType="textNoSuggestions"
+        android:maxLines="1"
+        android:textAppearance="@style/primaryTextAppearance" />
+
+</RelativeLayout>

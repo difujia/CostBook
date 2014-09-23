@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Translations_en -->
+
+    <string name="app_name">小账本</string>
+    <string name="action_settings">设置</string>
+
+    <!-- main activity -->
+    <string name="alert_title_delete">删除条目？</string>
+    <string name="alert_title_yes">是</string>
+    <string name="alert_title_no">否</string>
+
+    <!-- settings fragment -->
+    <string name="title_activity_settings">设置</string>
+    <string name="settings_currency">货币</string>
+    <string name="settings_alarm">提醒</string>
+    <string name="settings_alarm_switch">每天提醒</string>
+    <string name="settings_alarm_time">提醒时间</string>
+    <string name="settings_primary_currency">本位币</string>
+    <string name="settings_multi_currency">选择货币</string>
+    <string name="settings_error_empty_selection">请至少选择一项。</string>
+    <string name="settings_discard">放弃</string>
+    <string name="settings_set">设置</string>
+    <string name="settings_cancel">取消</string>
+    <string name="settings_update_info">汇率更新：</string>
+    <string name="settings_never">从未</string>
+
+    <!-- recorder panel fragment -->
+    <string name="title_activity_recorder">记一笔</string>
+    <string name="panel_remark_hint">添加备注</string>
+    <string name="ok">好</string>
+
+    <!-- notification -->
+    <string name="notification_title">记下今天的开销。</string>
+
+    <!-- human-readable entries -->
+    <string-array name="category_entries">
+        <item>一般</item>
+        <item>居家</item>
+        <item>购物</item>
+        <item>餐饮</item>
+        <item>交通</item>
+        <item>娱乐</item>
+        <item>账单</item>
+        <item>银行</item>
+        <item>学习</item>
+        <item>IT</item>
+    </string-array>
+
+</resources>
